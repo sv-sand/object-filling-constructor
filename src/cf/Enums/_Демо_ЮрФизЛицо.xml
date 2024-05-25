@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="6c23bc00-1a73-4ee8-a0ac-df436e2969e4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef._Демо_ЮрФизЛицо" category="Ref">
+				<xr:TypeId>59d26ea9-e470-43d7-b12a-4fef78801f25</xr:TypeId>
+				<xr:ValueId>a9759fd8-64f4-45d3-80d2-7d290e60d39f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager._Демо_ЮрФизЛицо" category="Manager">
+				<xr:TypeId>55b28678-885e-4840-8a1c-7ac452ae665b</xr:TypeId>
+				<xr:ValueId>26b90022-a6f5-4c3f-93a8-e049830d991f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList._Демо_ЮрФизЛицо" category="List">
+				<xr:TypeId>9c7b2455-2dd6-435d-9213-43db5b36a39d</xr:TypeId>
+				<xr:ValueId>7cf8d2ad-c93a-4974-a202-6c5766777b42</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>_Демо_ЮрФизЛицо</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юр физ лицо (демо)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="71a0614a-0395-4614-ad6a-c0bf58440aa7">
+				<Properties>
+					<Name>ЮридическоеЛицо</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Юридическое лицо</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a146f17d-4e2a-4d8f-a265-51ee29351f67">
+				<Properties>
+					<Name>ФизическоеЛицо</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физическое лицо</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fc983716-cf29-41eb-9757-f800214cee43">
+				<Properties>
+					<Name>ИндивидуальныйПредприниматель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индивидуальный предприниматель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

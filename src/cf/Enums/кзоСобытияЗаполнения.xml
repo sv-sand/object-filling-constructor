@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="5b5efab8-4a3e-4a35-b5c2-39d006f53249">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.кзоСобытияЗаполнения" category="Ref">
+				<xr:TypeId>a09583d4-496d-4127-b353-ae0b9b6d87dd</xr:TypeId>
+				<xr:ValueId>6183f0ee-fcf1-43e5-bc26-f75d26cdc432</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.кзоСобытияЗаполнения" category="Manager">
+				<xr:TypeId>fd3b6641-49c2-44a4-9609-874dbdb38279</xr:TypeId>
+				<xr:ValueId>03ebd57b-b70e-49ce-ad57-105f241745a8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.кзоСобытияЗаполнения" category="List">
+				<xr:TypeId>e380e21d-2286-430b-992a-e5767b139854</xr:TypeId>
+				<xr:ValueId>2f64d8ea-faec-43f6-8a4a-00c8583e7ef3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>кзоСобытияЗаполнения</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События заполнения (кзо)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События заполнения (кзо)</v8:content>
+				</v8:item>
+			</ListPresentation>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="43bf095d-c503-48e5-b5d7-466255383978">
+				<Properties>
+					<Name>Создание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3d6e692a-2df9-46e7-bd2f-c292a1f1fa3c">
+				<Properties>
+					<Name>Копирование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Копирование</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f024bdfc-20fb-4f75-97f2-6408ef809c79">
+				<Properties>
+					<Name>ЗаполнениеНаОсновании</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение на основании</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e14e4092-e7c8-4fbc-afde-fa2529cc2bc8">
+				<Properties>
+					<Name>НажатиеНаКнопку</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нажатие на кнопку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="af71920c-d5d0-43a6-9ac5-5f67690fa336">
+				<Properties>
+					<Name>СобытиеЭлементаФормы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Событие элемента формы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

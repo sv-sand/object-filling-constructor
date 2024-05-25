@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздать" id="75">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Create</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьРасширеннаяПодсказка" id="76"/>
+			</Button>
+			<Button name="ФормаСкопировать" id="79">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Copy</CommandName>
+				<ExtendedTooltip name="ФормаСкопироватьРасширеннаяПодсказка" id="80"/>
+			</Button>
+			<Button name="ФормаСоздатьГруппу" id="77">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.StandardCommand.CreateFolder</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьГруппуРасширеннаяПодсказка" id="78"/>
+			</Button>
+			<Button name="СписокОбновить" id="118">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="119"/>
+			</Button>
+			<ButtonGroup name="ФормаГруппаАктивироватьДеактивировать" id="81">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа активировать деактивировать</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа активировать деактивировать</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппаАктивироватьДеактивироватьРасширеннаяПодсказка" id="82"/>
+				<ChildItems>
+					<Button name="ФормаДеактивировать" id="83">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Активировать</CommandName>
+						<ExtendedTooltip name="ФормаДеактивироватьРасширеннаяПодсказка" id="84"/>
+					</Button>
+					<Button name="ФормаАктивировать" id="85">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Деактивировать</CommandName>
+						<ExtendedTooltip name="ФормаАктивироватьРасширеннаяПодсказка" id="86"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппаВыгрузкаЗагрузка" id="92">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа выгрузка загрузка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа выгрузка загрузка</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ФормаГруппаВыгрузкаЗагрузкаРасширеннаяПодсказка" id="93"/>
+				<ChildItems>
+					<Button name="ФормаВыгрузитьВФайл" id="90">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьВФайл</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаВыгрузитьВФайлРасширеннаяПодсказка" id="91"/>
+					</Button>
+					<Button name="ФормаЗагрузитьИзФайла" id="94">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаЗагрузитьИзФайлаРасширеннаяПодсказка" id="95"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппаГлобальныеКоманды" id="96">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа глобальные команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа глобальные команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+				<ExtendedTooltip name="ФормаГруппаГлобальныеКомандыРасширеннаяПодсказка" id="97"/>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Ссылка" id="115">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="117"/>
+				</LabelField>
+				<PictureField name="СтандартнаяКартинка" id="87">
+					<DataPath>Список.DefaultPicture</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СтандартнаяКартинкаКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="СтандартнаяКартинкаРасширеннаяПодсказка" id="89"/>
+				</PictureField>
+				<LabelField name="Наименование" id="39">
+					<DataPath>Список.Наименование</DataPath>
+					<Width>30</Width>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="41"/>
+				</LabelField>
+				<CheckBoxField name="Активно" id="57">
+					<DataPath>Список.Активно</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АктивноКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="АктивноРасширеннаяПодсказка" id="59"/>
+				</CheckBoxField>
+				<ColumnGroup name="ГруппаПериод" id="126">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="127"/>
+					<ChildItems>
+						<LabelField name="НачалоПериода" id="60">
+							<DataPath>Список.НачалоПериода</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>с</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="62"/>
+						</LabelField>
+						<LabelField name="КонецПериода" id="63">
+							<DataPath>Список.КонецПериода</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КонецПериодаКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="65"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="ОбъектМетаданных" id="48">
+					<DataPath>Список.ОбъектМетаданных</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ОбъектМетаданныхКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ОбъектМетаданныхРасширеннаяПодсказка" id="50"/>
+				</LabelField>
+				<LabelField name="ВидСобытия" id="123">
+					<DataPath>Список.ВидСобытия</DataPath>
+					<ContextMenu name="ВидСобытияКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ВидСобытияРасширеннаяПодсказка" id="125"/>
+				</LabelField>
+				<LabelField name="СтрокаОтбор" id="66">
+					<DataPath>Список.СтрокаОтбор</DataPath>
+					<Height>2</Height>
+					<ContextMenu name="СтрокаОтборКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="СтрокаОтборРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+				<LabelField name="СтрокаПользователи" id="72">
+					<DataPath>Список.СтрокаПользователи</DataPath>
+					<Height>2</Height>
+					<ContextMenu name="СтрокаПользователиКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="СтрокаПользователиРасширеннаяПодсказка" id="74"/>
+				</LabelField>
+				<LabelField name="СтрокаПравила" id="69">
+					<DataPath>Список.СтрокаПравила</DataPath>
+					<Height>2</Height>
+					<ContextMenu name="СтрокаПравилаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СтрокаПравилаРасширеннаяПодсказка" id="71"/>
+				</LabelField>
+				<CheckBoxField name="ЕстьПрограммныйКод" id="120">
+					<DataPath>Список.ЕстьПрограммныйКод</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПК</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЕстьПрограммныйКодКонтекстноеМеню" id="121"/>
+					<ExtendedTooltip name="ЕстьПрограммныйКодРасширеннаяПодсказка" id="122"/>
+				</CheckBoxField>
+				<LabelField name="Ответственный" id="42">
+					<DataPath>Список.Ответственный</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="44"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="45">
+					<DataPath>Список.Комментарий</DataPath>
+					<Height>2</Height>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="47"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПравилаЗаполнения.Ссылка КАК Ссылка,
+	ПравилаЗаполнения.ПометкаУдаления КАК ПометкаУдаления,
+	ПравилаЗаполнения.Родитель КАК Родитель,
+	ПравилаЗаполнения.ЭтоГруппа КАК ЭтоГруппа,
+	ПравилаЗаполнения.Код КАК Код,
+	ПравилаЗаполнения.Наименование КАК Наименование,
+	ПравилаЗаполнения.Активно КАК Активно,
+	ПравилаЗаполнения.ОбъектМетаданных КАК ОбъектМетаданных,
+	ПравилаЗаполнения.ХранилищеНастроек КАК ХранилищеНастроек,
+	ПравилаЗаполнения.НачалоПериода КАК НачалоПериода,
+	ПравилаЗаполнения.КонецПериода КАК КонецПериода,
+	ПравилаЗаполнения.СтрокаОтбор КАК СтрокаОтбор,
+	ПравилаЗаполнения.СтрокаПравила КАК СтрокаПравила,
+	ПравилаЗаполнения.СтрокаПользователи КАК СтрокаПользователи,
+	ПравилаЗаполнения.ПрограммныйКод КАК ПрограммныйКод,
+	ПравилаЗаполнения.ВидСобытия КАК ВидСобытия,
+	ПравилаЗаполнения.ИспользоватьПриСоздании КАК ИспользоватьПриСоздании,
+	ПравилаЗаполнения.ИспользоватьПриКопировании КАК ИспользоватьПриКопировании,
+	ПравилаЗаполнения.ИспользоватьПриЗаполнении КАК ИспользоватьПриЗаполнении,
+	ПравилаЗаполнения.ИспользоватьПриНажатииНаКнопку КАК ИспользоватьПриНажатииНаКнопку,
+	ПравилаЗаполнения.ВидСобытия = ЗНАЧЕНИЕ(Перечисление.кзоВидыСобытийПравилЗаполнения.СобытиеЭлементаФормы) КАК ИспользоватьПоСобытиюЭлементаФормы,
+	ПравилаЗаполнения.Приоритет КАК Приоритет,
+	ПравилаЗаполнения.Ответственный КАК Ответственный,
+	ПравилаЗаполнения.Комментарий КАК Комментарий,
+	ПравилаЗаполнения.ГруппыПользователей.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Группа КАК Группа
+	) КАК ГруппыПользователей,
+	ПравилаЗаполнения.Пользователи.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Пользователь КАК Пользователь
+	) КАК Пользователи,
+	ПравилаЗаполнения.Заполнение.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Использование КАК Использование,
+		ИмяРеквизита КАК ИмяРеквизита,
+		Значение КАК Значение
+	) КАК Заполнение,
+	ПравилаЗаполнения.Предопределенный КАК Предопределенный,
+	ПравилаЗаполнения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	(ВЫРАЗИТЬ(ПравилаЗаполнения.ПрограммныйКод КАК СТРОКА(100))) &lt;&gt; "" КАК ЕстьПрограммныйКод
+ИЗ
+	Справочник.кзоПравилаЗаполнения КАК ПравилаЗаполнения</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НачалоПериода</dcssch:dataPath>
+					<dcssch:field>НачалоПериода</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппыПользователей.Группа</dcssch:dataPath>
+					<dcssch:field>ГруппыПользователей.Группа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ХранилищеНастроек</dcssch:dataPath>
+					<dcssch:field>ХранилищеНастроек</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Активно</dcssch:dataPath>
+					<dcssch:field>Активно</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьПриЗаполнении</dcssch:dataPath>
+					<dcssch:field>ИспользоватьПриЗаполнении</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектМетаданных</dcssch:dataPath>
+					<dcssch:field>ОбъектМетаданных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонецПериода</dcssch:dataPath>
+					<dcssch:field>КонецПериода</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ГруппыПользователей</dcssch:dataPath>
+					<dcssch:field>ГруппыПользователей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтрокаОтбор</dcssch:dataPath>
+					<dcssch:field>СтрокаОтбор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Заполнение</dcssch:dataPath>
+					<dcssch:field>Заполнение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтрокаПравила</dcssch:dataPath>
+					<dcssch:field>СтрокаПравила</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пользователи.Ссылка</dcssch:dataPath>
+					<dcssch:field>Пользователи.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтрокаПользователи</dcssch:dataPath>
+					<dcssch:field>СтрокаПользователи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрограммныйКод</dcssch:dataPath>
+					<dcssch:field>ПрограммныйКод</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьПрограммныйКод</dcssch:dataPath>
+					<dcssch:field>ЕстьПрограммныйКод</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьПриСоздании</dcssch:dataPath>
+					<dcssch:field>ИспользоватьПриСоздании</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьПриКопировании</dcssch:dataPath>
+					<dcssch:field>ИспользоватьПриКопировании</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьПриНажатииНаКнопку</dcssch:dataPath>
+					<dcssch:field>ИспользоватьПриНажатииНаКнопку</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заполнение.ИмяРеквизита</dcssch:dataPath>
+					<dcssch:field>Заполнение.ИмяРеквизита</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидСобытия</dcssch:dataPath>
+					<dcssch:field>ВидСобытия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ответственный</dcssch:dataPath>
+					<dcssch:field>Ответственный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппыПользователей.Ссылка</dcssch:dataPath>
+					<dcssch:field>ГруппыПользователей.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппыПользователей.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>ГруппыПользователей.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пользователи.Пользователь</dcssch:dataPath>
+					<dcssch:field>Пользователи.Пользователь</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пользователи.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Пользователи.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Пользователи</dcssch:dataPath>
+					<dcssch:field>Пользователи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заполнение.Ссылка</dcssch:dataPath>
+					<dcssch:field>Заполнение.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заполнение.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Заполнение.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заполнение.Использование</dcssch:dataPath>
+					<dcssch:field>Заполнение.Использование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заполнение.Значение</dcssch:dataPath>
+					<dcssch:field>Заполнение.Значение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СобытиеЭлементаФормы</dcssch:dataPath>
+					<dcssch:field>СобытиеЭлементаФормы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьПоСобытиюЭлементаФормы</dcssch:dataPath>
+					<dcssch:field>ИспользоватьПоСобытиюЭлементаФормы</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать по событию элемента формы</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СобытияЭлементовФорм</dcssch:dataPath>
+					<dcssch:field>СобытияЭлементовФорм</dcssch:field>
+				</Field>
+				<MainTable>Catalog.кзоПравилаЗаполнения</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ПометкаУдаления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Деактивировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деактивировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Деактивировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCrossIcon</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Деактивировать</Action>
+		</Command>
+		<Command name="Активировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Активировать</Action>
+		</Command>
+		<Command name="ВыгрузитьВФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьВФайл</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+	</Commands>
+</Form>

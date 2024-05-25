@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ФормаГруппаРежим" id="29">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Режим</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа режим</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Parameters</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаГруппаРежимРасширеннаяПодсказка" id="30"/>
+				<ChildItems>
+					<Button name="ФормаРежимЗагрузка" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РежимЗагрузка</CommandName>
+						<ExtendedTooltip name="ФормаРежимЗагрузкаРасширеннаяПодсказка" id="32"/>
+					</Button>
+					<Button name="ФормаРежимВыгрузка" id="33">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РежимВыгрузка</CommandName>
+						<ExtendedTooltip name="ФормаРежимВыгрузкаРасширеннаяПодсказка" id="34"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаВыгрузить" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Выгрузить</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьРасширеннаяПодсказка" id="24"/>
+			</Button>
+			<Button name="ФормаЗагрузить" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Загрузить</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="26"/>
+			</Button>
+			<ButtonGroup name="ГруппаСохранение" id="44">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа сохранение</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа сохранение</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Representation>Compact</Representation>
+				<ExtendedTooltip name="ГруппаСохранениеРасширеннаяПодсказка" id="45"/>
+				<ChildItems>
+					<Button name="ФормаВосстановитьЗначения" id="48">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+						<ExtendedTooltip name="ФормаВосстановитьЗначенияРасширеннаяПодсказка" id="49"/>
+					</Button>
+					<Button name="ФормаСохранитьЗначения" id="46">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.StandardCommand.SaveValues</CommandName>
+						<ExtendedTooltip name="ФормаСохранитьЗначенияРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИмяФайла" id="1">
+			<DataPath>Объект.ИмяФайла</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ИмяФайлаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ЗагружатьНеАктивными" id="41">
+			<DataPath>Объект.ЗагружатьНеАктивными</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Switcher</CheckBoxType>
+			<ContextMenu name="ЗагружатьНеАктивнымиКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ЗагружатьНеАктивнымиРасширеннаяПодсказка" id="43"/>
+		</CheckBoxField>
+		<Table name="ПравилаКВыгрузке" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Правила</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПравилаКВыгрузкеКонтекстноеМеню" id="5">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="ПравилаКВыгрузкеКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ПравилаКВыгрузкеДобавить" id="35">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.ПравилаКВыгрузке.StandardCommand.Add</CommandName>
+						<ExtendedTooltip name="ПравилаКВыгрузкеДобавитьРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="ПравилаКВыгрузкеИзменить" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ПравилаКВыгрузке.StandardCommand.Change</CommandName>
+						<ExtendedTooltip name="ПравилаКВыгрузкеИзменитьРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="ПравилаКВыгрузкеУдалить" id="39">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Item.ПравилаКВыгрузке.StandardCommand.Delete</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ПравилаКВыгрузкеУдалитьРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ПравилаКВыгрузкеЗаполнить" id="27">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ПравилаКВыгрузкеЗаполнитьРасширеннаяПодсказка" id="28"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПравилаКВыгрузкеРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ПравилаКВыгрузкеСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ПравилаКВыгрузке</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПравилаКВыгрузкеСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПравилаКВыгрузкеСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПравилаКВыгрузкеСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ПравилаКВыгрузке</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПравилаКВыгрузкеСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПравилаКВыгрузкеСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПравилаКВыгрузкеУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ПравилаКВыгрузке</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПравилаКВыгрузкеУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПравилаКВыгрузкеУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ПравилаКВыгрузкеВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПравилаКВыгрузкеНомерСтроки" id="17">
+					<DataPath>Объект.Правила.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПравилаКВыгрузкеНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПравилаКВыгрузкеНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ПравилаКВыгрузкеПравило" id="20">
+					<DataPath>Объект.Правила.Правило</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПравилаКВыгрузкеПравилоКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПравилаКВыгрузкеПравилоРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПравилаКВыгрузкеТипЗначения" id="50">
+					<DataPath>Объект.Правила.ТипЗначения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<TextColor>web:Gray</TextColor>
+					<ContextMenu name="ПравилаКВыгрузкеТипЗначенияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПравилаКВыгрузкеТипЗначенияРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.кзоВыгрузкаЗагрузкаПравил</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ЗагружатьНеАктивными</Field>
+				<Field>Объект.ИмяФайла</Field>
+			</Save>
+			<Columns>
+				<AdditionalColumns table="Объект.Правила">
+					<Column name="ТипЗначения" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Загрузить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выгрузить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Заполнить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Заполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="РежимЗагрузка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим загрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РежимЗагрузка</Action>
+		</Command>
+		<Command name="РежимВыгрузка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим выгрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РежимВыгрузка</Action>
+		</Command>
+	</Commands>
+</Form>

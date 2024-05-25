@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="2e882c1b-f90d-4c00-9874-9c4bd6a8f5a7">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.кзоМоментыВыполненияПодключаемыхОбработчиков" category="Ref">
+				<xr:TypeId>43198aee-59a3-470e-aba1-51c0e7433962</xr:TypeId>
+				<xr:ValueId>6adddf54-abee-450e-8668-b07a3e4971ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.кзоМоментыВыполненияПодключаемыхОбработчиков" category="Manager">
+				<xr:TypeId>869432aa-ea09-4d1b-92b0-13239f5012bb</xr:TypeId>
+				<xr:ValueId>9b4fdb1f-97ec-4ba9-935a-1025b9fb414e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.кзоМоментыВыполненияПодключаемыхОбработчиков" category="List">
+				<xr:TypeId>897cac59-27b2-421d-a557-dcdd9aa1baf2</xr:TypeId>
+				<xr:ValueId>5e3c07c6-6784-4f13-b856-53c303223751</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>кзоМоментыВыполненияПодключаемыхОбработчиков</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Моменты выполнения подключаемых обработчиков (кзо)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="d8322939-ca49-4e71-9835-2eb859980f55">
+				<Properties>
+					<Name>ПередТиповымОбработчиком</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перед типовым обработчиком</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9a87ccab-35af-43c2-be13-2c5d4c8be42e">
+				<Properties>
+					<Name>ВместоТиповогоОбработчика</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вместо типового обработчика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eda1c5d3-5946-4541-8656-a28adb509cb2">
+				<Properties>
+					<Name>ПослеТиповогоОбработчика</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>После типового обработчика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
